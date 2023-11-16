@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form accept-charset="UTF-8" name="myForm" action="/submit" method="post" id="form1" novalidate>
+
+        <input type="text" maxlength="10" max="100" height="50" disabled name="inputField" formenctype="text/plain" dirname="dir" formnovalidate width="200" autocomplete="on" checked>
+
+
+        <input type="datetime">
+        <input type="radio">
+        <input type="datetime-local">
+        <input type="color">
+        <input type="button">
+        <input type="url">
+        <input type="month">
+        <input type="submit">
+
+        <textarea dirname="dir" class="textareaClass" name="textareaField" placeholder="Введіть ваш текст" required  minlength="5"></textarea>
+
+        <button name="submitButton" formenctype="multipart/form-data" autofocus form="form1">Відправити</button>
+
+        <fieldset lang="uk" style="border: 2px solid #000;" title="Група полів для адреси">
+            <legend title="Адреса доставки" lang="uk" style="font-weight: bold;">Адреса доставки</legend>
+            <label for="street">Вулиця:</label>
+            <input type="text" id="street" name="street" required>
+            <br>
+            <label for="city">Місто:</label>
+            <input type="text" id="city" name="city" required>
+            <br>
+            <label for="zip">Індекс:</label>
+            <input type="text" id="zip" name="zip" required>
+        </fieldset>
+
+        <select>
+            <option dir="ltr" disabled selected label="Оберіть опцію">Опція 1</option>
+            <option dir="rtl">Опція 1</option>
+            <option dir="rtl">Опція 2</option>
+        </select>
+
+        <label id="label1" class="labelClass" for="inputField">Мітка для вводу</label>
+
+        <fieldset>
+            <legend title="Інші налаштування" lang="uk" style="font-weight: bold;">Інші налаштування</legend>
+            <label for="setting1">Параметр 1:</label>
+            <input type="text" id="setting1" name="setting1">
+            <br>
+            <label for="setting2">Параметр 2:</label>
+            <input type="text" id="setting2" name="setting2">
+        </fieldset>
+
+        <output class="outputClass" form="form1" lang="uk" name="outputField">Значення результату</output>
+
+        <keygen disabled name="keygenField" title="Заголовок ключа генерації" challenge="випадковий-виклик" autofocus>
+
+        <progress value="50" dir="ltr" max="100"></progress>
+    </form>
+</body>
+</html>
